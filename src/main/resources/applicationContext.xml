@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="planet" class="example_1_beans.Planet">
+        <property name="name" value="Saturnas"/>
+        <property name="distanceToEarth" value="12346789"/>
+
+    </bean>
+
+    <bean id="Mikrobange" class="groupWork.Mikrobange">
+        <property name="brand" value="LG"/>
+
+    </bean>
+    <bean id="Orkaite" class="groupWork.Orkaite">
+        <property name="brand" value="Siemens 00000"/>
+
+    </bean>
+    <bean id="racer" class="Spring0416.Racer">
+        <constructor-arg ref="raceCar"/>
+    </bean>
+    <bean id="raceCar" class="Spring0416.RaceCar"></bean>
+
+
+</beans>
